@@ -20,8 +20,7 @@ document.getElementById('sendButton').addEventListener('click', function() {
 });
 
 function connectWebSocket() {
-    socket = new WebSocket('wss://sly-marbled-yuzu.glitch.me/');
-
+    socket = new WebSocket('wss://sly-marbled-yuzu.glitch.me:1500/');
     socket.onopen = function() {
         console.log("WebSocket connection established.");
         if (username) {
